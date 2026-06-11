@@ -36,53 +36,6 @@ color:#222;
 
 /* NAVBAR */
 
-@media (max-width: 768px){
-
-    nav{
-        padding:15px 5%;
-    }
-
-    .logo{
-        font-size:20px;
-    }
-
-    .logo svg{
-        width:30px;
-        height:30px;
-    }
-
-    .hero-content{
-        width:90%;
-        margin:auto;
-        text-align:center;
-    }
-
-    .hero h1{
-        font-size:56px;
-        line-height:0.9;
-    }
-
-    .hero-script{
-        font-size:65px;
-    }
-
-    .hero p{
-        font-size:16px;
-        line-height:1.7;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .hero-buttons a{
-        width:220px;
-        text-align:center;
-    }
-
-}
-
 nav{
 position:fixed;
 top:0;
@@ -122,9 +75,9 @@ nav svg{
 }
 
 nav ul{
-display:flex;
-list-style:none;
-gap:12px;
+    display:flex;
+    list-style:none;
+    gap:12px;
 }
 
 .nav-right{
@@ -138,7 +91,7 @@ gap:12px;
 nav ul li a{
 	padding:8px 12px;
 	border-radius:8px;
-	transition:background .2s,color .2s;
+	transition:background.2s,color .2s;
 }
 
 nav ul li a:hover{
@@ -147,17 +100,17 @@ nav ul li a:hover{
 }
 
 nav ul li a{
-color:white;
-text-decoration:none;
-font-weight:500;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
 }
 
 .btn-nav{
-background:#d39c2f;
-padding:12px 24px;
-border-radius:30px;
-color:white;
-text-decoration:none;
+    background:#d39c2f;
+    padding:12px 24px;
+    border-radius:30px;
+    color:white;
+    text-decoration:none;
 }
 
 /* HERO */
@@ -178,14 +131,14 @@ padding:0 8%;
 }
 
 .hero-content{
-max-width:650px;
-color:white;
+    max-width:650px;
+    color:white;
 }
 
 .hero h1{
-font-size:85px;
-font-weight:800;
-line-height:90px;
+    font-size:85px;
+    font-weight:800;
+    line-height:90px;
 	text-align: left;
 	text-shadow: 0 12px 30px rgba(0,0,0,0.45);
 }
@@ -209,32 +162,32 @@ line-height:90px;
 }
 
 .hero p{
-font-size:22px;
-margin-top:20px;
-line-height:1.7;
+    font-size:22px;
+    margin-top:20px;
+    line-height:1.7;
 }
 
 .hero-buttons{
-margin-top:35px;
-display:flex;
-gap:15px;
+    margin-top:35px;
+    display:flex;
+    gap:15px;
 }
 
 .btn-primary{
-background:#d39c2f;
-padding:15px 35px;
-border-radius:40px;
-text-decoration:none;
-color:white;
-font-weight:600;
+    background:#d39c2f;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    color:white;
+    font-weight:600;
 }
 
 .btn-secondary{
-border:2px solid white;
-padding:15px 35px;
-border-radius:40px;
-text-decoration:none;
-color:white;
+    border:2px solid white;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    color:white;
 }
 
 /* STATS */
@@ -508,6 +461,55 @@ grid-template-columns:1fr;
         gap:15px;
     }
 
+@media (max-width:768px){
+
+.hero{
+    padding:0 6%;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:100%;
+    text-align:left;
+}
+
+.hero h1{
+    font-size:56px !important;
+    line-height:58px !important;
+    margin-bottom:15px;
+}
+
+.hero h1 .come{
+    font-size:56px !important;
+    display:block;
+    margin-right:0;
+}
+
+.hero h1 .as{
+    font-size:48px !important;
+    display:block;
+}
+
+.hero p{
+    font-size:16px !important;
+    line-height:1.7;
+    max-width:420px;
+}
+
+.hero-buttons{
+    margin-top:25px;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    gap:12px;
+}
+
+.btn-primary,
+.btn-secondary{
+    padding:12px 22px !important;
+    font-size:13px !important;
+}
+
 }
 
 </style>
@@ -541,7 +543,7 @@ Youth Germita Syalom
 <li><a href="#beranda">Beranda</a></li>
 <li><a href="#tentang">Tentang</a></li>
 <li><a href="#jadwal">Jadwal</a></li>
-<li><a href="https://excellenttchrist-a11y.github.io/News/index.html">Berita</a></li>
+<li><a href="https://youthgsj.github.io/News/">Berita</a></li>
 <li><a href="#">Kontak</a></li>
 </ul>
 
@@ -549,7 +551,7 @@ Youth Germita Syalom
 Gabung
 </a>
 
-<div class="menu-toggle">☰</div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </nav>
 
 <section class="hero" id="beranda">
@@ -673,7 +675,6 @@ Tonton Video
     </div>
 
 </section>
-</section>
 
 <section class="about" id="tentang">
 
@@ -755,7 +756,7 @@ Belajar firman Tuhan secara mendalam.
 </button>
 <img
 id="activity-slider"
-src="images3/activity.png"
+src="images3/Aktivitas.png"
 alt="Activity">
 <button class="next" onclick="nextSlideActivity()">
 ❯
@@ -808,29 +809,29 @@ Membangun relasi dan persahabatan baru.
 
 <script>
 
-const Kebersamaan = [
+const kebersamaan = [
 
-'images/Kebersamaan.png',
-'images/Kebersamaan (2).png',
-'images/Kebersamaan (3).png',
-'images/Kebersamaan (4).png',
-'images/Kebersamaan (5).png',
-'images/Kebersamaan (6).png',
-'images/Kebersamaan (7).png',
-'images/Kebersamaan (8).png'
+'images/kebersamaan.png',
+'images/kebersamaan (2).png',
+'images/kebersamaan (3).png',
+'images/kebersamaan (4).png',
+'images/kebersamaan (5).png',
+'images/kebersamaan (6).png',
+'images/kebersamaan (7).png',
+'images/kebersamaan (8).png'
 
 ];
 
 let currentIndex = 0;
 function showSlide(){
-document.getElementById("Kebersamaan-slider").src =
-Kebersamaan[currentIndex];
+document.getElementById("kebersamaan-slider").src =
+kebersamaan[currentIndex];
 
 }
 
 function nextSlide(){
 currentIndex++;
-if(currentIndex >= Kebersamaan.length){
+if(currentIndex >= kebersamaan.length){
 currentIndex = 0;
 }
 
@@ -841,7 +842,7 @@ showSlide();
 function prevSlide(){
 currentIndex--;
 if(currentIndex < 0){
-currentIndex = Kebersamaan.length - 1;
+currentIndex = kebersamaan.length - 1;
 }
 
 showSlide();
@@ -882,7 +883,7 @@ showSlidePenyembahan();
 function prevSlidePenyembahan(){
 currentPenyembahan--;
 if(currentPenyembahan < 0){
-currentPenyembahan = penyembahan.length - 1;
+currentPenyembahan = PENYEMBAHAN.length - 1;
 }
 
 showSlidePenyembahan();
@@ -894,27 +895,27 @@ nextSlidePenyembahan();
 
 },5000);
 
-const Komsel = [
+const komsel = [
 
-'images2/KOMSEL.png',
-'images2/KOMSEL (2).png',
-'images2/KOMSEL (3).png',
-'images2/KOMSEL (4).png',
-'images2/KOMSEL (5).png',
-'images2/KOMSEL (6).png',
+'images2/komsel.png',
+'images2/komsel (2).png',
+'images2/komsel (3).png',
+'images2/komsel (4).png',
+'images2/komsel (5).png',
+'images2/komsel (6).png',
 
 ];
 
 let currentKomsel = 0;
 function showSlideKomsel(){
-document.getElementById("Komsel-slider").src =
+document.getElementById("komsel-slider").src =
 komsel[currentKomsel];
 
 }
 
 function nextSlideKomsel(){
 currentKomsel++;
-if(currentKomsel >= Komsel.length){
+if(currentKomsel >= komsel.length){
 currentKomsel = 0;
 }
 
@@ -925,7 +926,7 @@ showSlideKomsel();
 function prevSlideKomsel(){
 currentKomsel--;
 if(currentKomsel < 0){
-currentKomsel = Komsel.length - 1;
+currentKomsel = komsel.length - 1;
 }
 
 showSlideKomsel();
@@ -981,5 +982,17 @@ nextSlideActivity();
 },5000);
 
 </script>
+
+<script>
+
+function toggleMenu(){
+
+document.querySelector("nav ul")
+.classList.toggle("active");
+
+}
+
+</script>
+
 </body>
 </html>
