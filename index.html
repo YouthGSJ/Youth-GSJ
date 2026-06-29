@@ -4,6 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Website resmi Youth Germita Syalom Jakarta. Bertumbuh bersama dalam iman, kasih, pelayanan, dan komunitas yang hidup di dalam Kristus.">
+    <meta name="keywords"
+        content="Youth GSJ, Youth Germita Syalom, GSJ Jakarta, Gereja Syalom Jakarta, Youth Jakarta, Komunitas Kristen, Pemuda Gereja">
+    <meta name="author" content="Youth Germita Syalom Jakarta">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://youthgsjb.my.id/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://youthgsjb.my.id/">
+    <meta property="og:title" content="Youth Germita Syalom Jakarta">
+    <meta property="og:description"
+        content="Tidak perlu menjadi sempurna untuk datang. Mari bertumbuh bersama dalam iman, kasih dan tujuan yang Tuhan siapkan.">
+    <meta property="og:image" content="https://youthgsjb.my.id/index.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="https://youthgsjb.my.id/index.png">
+    <link rel="icon" type="image/png" href="logo/logo1.png">
+    <link rel="apple-touch-icon" href="logo/logo1.png">
     <title>Youth Germita Syalom Jakarta</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -28,6 +46,7 @@
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
+
         body {
             background: var(--light-bg);
             color: var(--dark-text);
@@ -139,10 +158,11 @@
 
         .menu-toggle {
             display: none;
-            font-size: 30px;
-            color: white;
+            font-size: 32px;
+            color: #fff;
             cursor: pointer;
             margin-left: auto;
+            z-index: 99999;
         }
 
         /* ===== HERO ===== */
@@ -302,6 +322,7 @@
         /* ===== FEATURES ===== */
         .features {
             margin-top: 60px;
+            margin-bottom: 40px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 25px;
@@ -438,7 +459,7 @@
 
         /* ===== NEWS SECTION ===== */
         .news-section {
-            padding: 80px 8%;
+            padding: 50px 8%;
             background: var(--light-bg);
             color: var(--dark-text);
         }
@@ -593,8 +614,26 @@
         }
 
         @media (max-width: 768px) {
+            nav {
+                padding: 12px 16px;
+            }
+
             .logo {
-                font-size: 18px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 8px 10px;
+                max-width: 75%;
+            }
+
+            .logo img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .logo span {
+                font-size: 15px;
+                line-height: 1.2;
             }
 
             nav svg {
@@ -609,13 +648,19 @@
             nav ul.active {
                 display: flex;
                 flex-direction: column;
-                position: absolute;
-                top: 80px;
-                left: 0;
-                width: 100%;
-                background: rgba(0, 0, 0, 0.95);
-                padding: 20px;
-                gap: 15px;
+
+                position: fixed;
+                top: 0;
+                right: 0;
+
+                width: 260px;
+                height: 100vh;
+
+                padding: 90px 25px;
+
+                background: #111;
+
+                z-index: 9998;
             }
 
             .btn-nav {
@@ -623,7 +668,24 @@
             }
 
             .menu-toggle {
-                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: 45px;
+                height: 45px;
+
+                position: fixed;
+                top: 15px;
+                right: 15px;
+
+                background: rgba(0, 0, 0, .65);
+                border-radius: 10px;
+
+                color: #fff;
+                font-size: 28px;
+                cursor: pointer;
+                z-index: 10000;
             }
 
             .hero {
@@ -711,6 +773,22 @@
             }
         }
     </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Youth Germita Syalom Jakarta",
+      "url": "https://youthgsjb.my.id",
+      "logo": "https://youthgsjb.my.id/logo/logo1.png",
+      "description": "Komunitas Youth Germita Syalom Jakarta.",
+      "sameAs": [
+        "https://www.instagram.com/youthgsj.official?igsh=dnk1aXF2ZzJ0d2x5",
+        "https://whatsapp.com/channel/0029VbCsYRh47Xe4QPcn9I2u"
+      ]
+    }
+    </script>
+
 </head>
 
 <body>
@@ -913,8 +991,7 @@
                 <div class="news-content">
                     <h3>Paskah 2026</h3>
                     <p>"Kristus Bangkit Membarui Kemanusiaan Kita" (2 Korintus 5:17)</p>
-                    <a
-                        href="https://youthgsj.github.io/News/#paskah">Selengkapnya</a>
+                    <a href="https://youthgsj.github.io/News/#paskah">Selengkapnya</a>
                 </div>
             </div>
             <div class="news-card">
@@ -922,15 +999,15 @@
                 <div class="news-content">
                     <h3>Mutasi Pdt. Osvaldo Metusalach 2026</h3>
                     <p>Memberkati sesama melalui aksi nyata kasih dan pelayanan.</p>
-                    <a
-                        href="https://youthgsj.github.io/News/#mutasi">Selengkapnya</a>
+                    <a href="https://youthgsj.github.io/News/#mutasi">Selengkapnya</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="renungan-section" style="padding: 80px 8%; background: var(--light-bg);">
-        <h2 style="text-align: center; font-size: 42px; color: var(--gold); margin-bottom: 30px; font-weight: 700;">Renungan Harian</h2>
+        <h2 style="text-align: center; font-size: 42px; color: var(--gold); margin-bottom: 30px; font-weight: 700;">
+            Renungan Harian</h2>
         <div id="renungan" class="renungan-card">
             <div class="loading">Memuat Renungan...</div>
         </div>
@@ -1118,7 +1195,8 @@
 
     <footer>
         <p>© 2026 Youth Germita Syalom Jakarta</p>
-        <p style="margin-top: 10px; font-size: 12px; opacity: 0.8;">Komunitas Youth yang Hidup & Bertumbuh dalam Kristus</p>
+        <p style="margin-top: 10px; font-size: 12px; opacity: 0.8;">Komunitas Youth yang Hidup & Bertumbuh dalam Kristus
+        </p>
     </footer>
 
 </body>
